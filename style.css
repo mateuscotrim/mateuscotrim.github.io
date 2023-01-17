@@ -296,6 +296,10 @@ nav li a:hover {
     nav li a {
         font-size: 14px;
     }
+    
+    nav li a:hover {
+        border: none;
+    }
 
     #display .esquerda h2 {
         font-size: 28px;
