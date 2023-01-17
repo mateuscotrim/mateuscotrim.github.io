@@ -292,7 +292,10 @@ nav li a:hover {
 /* -- Mobile -- */
 
 @media screen and (max-width: 968px) {
-
+    nav li a {
+        font-size: 14px;
+    }
+    
     #display .direita {
         display: none
     }
