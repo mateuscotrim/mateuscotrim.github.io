@@ -84,7 +84,7 @@ nav li a:hover {
 
 #display {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     height: 84vh;
 }
