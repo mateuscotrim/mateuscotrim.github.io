@@ -70,6 +70,7 @@ nav li a {
     color: #676767;
     transition: 0.33s;
     padding: 8px;
+    font-weight: bold;
 }
 
 nav li a:hover {
@@ -295,7 +296,19 @@ nav li a:hover {
     nav li a {
         font-size: 14px;
     }
+
+    #display .esquerda h2 {
+        font-size: 28px;
+    }
     
+    #display .esquerda h1 {
+        font-size: 46px;
+    }
+    
+    #display .esquerda i {
+        font-size: 2.2rem;
+    }
+
     #display .direita {
         display: none
     }
