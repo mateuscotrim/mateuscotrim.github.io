@@ -147,133 +147,135 @@ nav li a:hover {
 
 /*-----------------------------------------------------------------------------------*/
 /* -- About -- */
-#sobre {
-    padding-top: 6em;
+#about {
+    padding-top: 4em;
 }
 
-#sobre .titulo h1 {
+#about .titulo h1 {
     color: white;
     font-size: 24px;
     text-align: center;
-    padding-bottom: 5px;
+    padding-bottom: 4px;
 }
 
-#sobre .titulo hr {
+#about .titulo hr {
     border: 3px solid steelblue;
     width: 3.75em;
     margin: auto;
 }
 
-#sobre .conteudo {
+#about .conteudo {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 30px;
 }
 
-#sobre .esquerda {
+#about .esquerda {
     width: 480px;
 }
 
-#sobre .esquerda h1 {
+#about .esquerda h1 {
     color: white;
     font-size: 32px;
+    text-align: center;
 }
 
-#sobre .esquerda p {
+#about .esquerda p {
     color: #676767;
     font-size: 18px;
+    text-align: justify;
 }
 
-#sobre .esquerda u {
+#about .esquerda u {
     color: steelblue;
 }
 
-#sobre .direita img {
+#about .direita img {
     width: 14em;
 }
 
 /*-----------------------------------------------------------------------------------*/
 /* -- Projetos -- */
-#projetos .titulo h1 {
+#projects .titulo h1 {
     color: white;
     font-size: 24px;
     text-align: center;
     padding-bottom: 5px;
 }
 
-#projetos .titulo hr {
+#projects .titulo hr {
     border: 3px solid steelblue;
     width: 3em;
     margin: auto;
 }
 
-#projetos .container {
+#projects .container {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
 }
 
-#projetos .cards {
+#projects .cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-#projetos .card {
+#projects .card {
     width: 300px;
     height: auto;
     margin: 16px;
 }
 
-#projetos .image {
+#projects .image {
     width: 300px;
     height: 150px;
 }
 
-#projetos .conteudo {
+#projects .conteudo {
     padding: 8px 0;
 }
 
-#projetos .conteudo h1 {
+#projects .conteudo h1 {
     color: white;
     font-size: 20px;
 }
 
-#projetos .conteudo p {
+#projects .conteudo p {
     color: #676767;
     font-size: 16px;
     padding-right: d8px;
 }
 
-#projetos .links {
+#projects .links {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#projetos .botao {
+#projects .botao {
     color: white;
     font-weight: bold;
     font-size: 16px;
     transition: 0.33s;
 }
 
-#projetos .botao:hover {
+#projects .botao:hover {
     color: steelblue;
 }
 
-#projetos .links i {
+#projects .links i {
     color: white;
     font-size: 35px;
 }
 
-#projetos .links i:hover {
+#projects .links i:hover {
     color: steelblue;
 }
 
-#projetos .links img {
+#projects .links img {
     height: 25px;
 }
 
@@ -318,20 +320,23 @@ nav li a:hover {
     #display .direita {
         display: none
     }
-
-    #sobre .esquerda h1 {
-        font-size: 22px
-    }
-
-    #sobre .direita {
-        display: none
-    }
-
-    #projetos {
+    #about {
         padding-top: 2em;
     }
 
-    #projetos .container {
+    #about .esquerda h1 {
+        font-size: 22px
+    }
+
+    #about .direita {
+        display: none
+    }
+
+    #projects {
+        padding-top: 2em;
+    }
+
+    #projects .container {
         min-height: 25vh;
     }
 }
