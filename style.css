@@ -132,7 +132,7 @@ nav li a:hover {
 }
 
 @keyframes float {
-    0%, 100% { transform: translatey(0) }
+    0%, 100% { transform: translatey(4px) }
     50% { transform: translatey(-4px) }
 }
 
@@ -191,7 +191,6 @@ nav li a:hover {
 
 #sobre .direita img {
     width: 14em;
-    
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -213,8 +212,7 @@ nav li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 50vh;
-    padding: 14px 0 0 0;
+    padding: 20px;
 }
 
 #projetos .cards {
@@ -226,7 +224,7 @@ nav li a:hover {
 #projetos .card {
     width: 300px;
     height: auto;
-    margin: 18px;
+    margin: 16px;
 }
 
 #projetos .image {
@@ -235,7 +233,7 @@ nav li a:hover {
 }
 
 #projetos .conteudo {
-    padding: 15px 0;
+    padding: 8px 0;
 }
 
 #projetos .conteudo h1 {
@@ -246,7 +244,7 @@ nav li a:hover {
 #projetos .conteudo p {
     color: #676767;
     font-size: 16px;
-    padding-right: 15px;
+    padding-right: d8px;
 }
 
 #projetos .links {
@@ -294,6 +292,9 @@ nav li a:hover {
 /* -- Mobile -- */
 
 @media screen and (max-width: 968px) {
+    nav {
+        justify-content: space-evenly;
+    }
     nav li a {
         font-size: 14px;
     }
@@ -319,15 +320,11 @@ nav li a:hover {
     }
 
     #sobre .esquerda h1 {
-        font-size: 25px
+        font-size: 22px
     }
 
     #sobre .direita {
         display: none
-    }
-
-    #sobre {
-        padding-top: 4em;
     }
 
     #projetos {
