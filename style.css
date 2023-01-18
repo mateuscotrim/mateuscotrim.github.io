@@ -49,13 +49,13 @@ nav {
     padding: 20px;
 }
 
-nav img {
-    width: 40px;
-}
-
 nav span {
     border: 3px solid white;
     padding: 10px;
+}
+
+nav img {
+    width: 40px;
 }
 
 nav ul, nav li {
@@ -136,19 +136,23 @@ nav li a:hover {
     50% { transform: translatey(-4px) }
 }
 
-.setinha {
+/*-----------------------------------------------------------------------------------*/
+/* -- Setinha -- */
+
+#setinha {
     display: flex;
     justify-content: center;
 }
 
-.setinha img {
+#setinha img {
     width: 60px;
 }
 
 /*-----------------------------------------------------------------------------------*/
 /* -- About -- */
+
 #about {
-    padding-top: 4em;
+    padding-top: 7em;
 }
 
 #about .titulo h1 {
@@ -196,7 +200,12 @@ nav li a:hover {
 }
 
 /*-----------------------------------------------------------------------------------*/
-/* -- Projetos -- */
+/* -- Projects -- */
+
+#projects {
+    padding-top: 7em;
+}
+
 #projects .titulo h1 {
     color: white;
     font-size: 24px;
@@ -255,19 +264,19 @@ nav li a:hover {
     align-items: center;
 }
 
-#projects .botao {
-    color: white;
+#projects .links a {
+    color: #fff;
     font-weight: bold;
     font-size: 16px;
     transition: 0.33s;
 }
 
-#projects .botao:hover {
+#projects .links a:hover{
     color: steelblue;
 }
 
 #projects .links i {
-    color: white;
+    color: #fff;
     font-size: 35px;
 }
 
@@ -294,9 +303,12 @@ nav li a:hover {
 /* -- Mobile -- */
 
 @media screen and (max-width: 968px) {
+
+    /* -- Navbar -- */
     nav {
         justify-content: space-evenly;
     }
+
     nav li a {
         font-size: 14px;
     }
@@ -305,10 +317,12 @@ nav li a:hover {
         border: none;
     }
 
+    /* -- Display -- */
+
     #display .esquerda h2 {
         font-size: 28px;
     }
-    
+
     #display .esquerda h1 {
         font-size: 46px;
     }
@@ -320,8 +334,11 @@ nav li a:hover {
     #display .direita {
         display: none
     }
+    
+    /* -- About -- */
+
     #about {
-        padding-top: 2em;
+        padding-top: 6.8em;
     }
 
     #about .esquerda h1 {
@@ -332,8 +349,10 @@ nav li a:hover {
         display: none
     }
 
+    /* -- Projects -- */
+
     #projects {
-        padding-top: 2em;
+        padding-top: 6.8em;
     }
 
     #projects .container {
