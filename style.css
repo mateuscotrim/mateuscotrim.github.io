@@ -24,7 +24,6 @@ body {
 ::-webkit-scrollbar {
     width: 0.8rem;
     border-radius: 0.5rem;
-    background-color: #242424;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -149,10 +148,13 @@ nav li a:hover {
 }
 
 /*-----------------------------------------------------------------------------------*/
-/* -- About -- */
 
 #about {
+    background-color: #1d1d1d;
     padding-top: 7em;
+}
+#fundo {
+    background-color: whitesmoke;
 }
 
 #about .titulo h1 {
@@ -200,14 +202,21 @@ nav li a:hover {
 }
 
 /*-----------------------------------------------------------------------------------*/
+/* -- Wave -- */
+
+#wave {
+    width: 100%;
+}
+
+/*-----------------------------------------------------------------------------------*/
 /* -- Projects -- */
 
 #projects {
-    padding-top: 7em;
+    background-color: whitesmoke;
 }
 
 #projects .titulo h1 {
-    color: white;
+    color: black;
     font-size: 24px;
     text-align: center;
     padding-bottom: 5px;
@@ -230,32 +239,36 @@ nav li a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-#projects .card {
-    width: 300px;
-    height: auto;
     margin: 16px;
 }
 
-#projects .image {
-    width: 300px;
-    height: 150px;
+#projects .card {
+    width: 310px;
+    height: auto;
+    margin: 10px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-#projects .conteudo {
-    padding: 8px 0;
+#projects .image {
+    width: 310px;
+    height: auto;
+}
+
+#projects .box {
+    padding: 10px 10px 10px 10px;
 }
 
 #projects .conteudo h1 {
-    color: white;
+    color: black;
     font-size: 20px;
+    padding-bottom: 8px;
 }
 
 #projects .conteudo p {
     color: #676767;
     font-size: 16px;
-    padding-right: d8px;
+    padding: 0 8px 8px 0;
 }
 
 #projects .links {
@@ -265,7 +278,7 @@ nav li a:hover {
 }
 
 #projects .links a {
-    color: #fff;
+    color: black;
     font-weight: bold;
     font-size: 16px;
     transition: 0.33s;
@@ -276,7 +289,7 @@ nav li a:hover {
 }
 
 #projects .links i {
-    color: #fff;
+    color: black;
     font-size: 35px;
 }
 
@@ -285,7 +298,7 @@ nav li a:hover {
 }
 
 #projects .links img {
-    height: 25px;
+    height: 28px;
 }
 
 /*-----------------------------------------------------------------------------------*/
