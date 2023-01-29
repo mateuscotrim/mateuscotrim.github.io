@@ -15,7 +15,6 @@ html {
     box-sizing: border-box;
 }
 
-
 body {
     background-color: #1d1d1d;
     font-family: 'Space Grotesk';
@@ -38,7 +37,7 @@ body {
 /*-----------------------------------------------------------------------------------*/
 /* -- Navbar -- */
 
-nav {
+#navbar {
     background-color: #1d1d1d;
     display: flex;
     justify-content: space-evenly;
@@ -46,25 +45,26 @@ nav {
     width: 100%;
     height: inherit;
     padding: 20px;
+    border-bottom: 1px solid #1a1a1a;
 }
 
-nav span {
+#navbar span {
     border: 3px solid white;
     padding: 10px;
 }
 
-nav img {
+#navbar img {
     width: 40px;
 }
 
-nav ul, nav li {
+#navbar ul, #navbar li {
     display: flex;
     align-items: center;
     list-style: none;
     margin: 4px;
 }
 
-nav li a {
+#navbar li a {
     text-decoration: none;
     color: #676767;
     transition: 0.33s;
@@ -73,9 +73,17 @@ nav li a {
     font-size: 16.5px;
 }
 
-nav li a:hover {
+#navbar li a:hover {
     border: 1px solid steelblue;
     color: steelblue;
+}
+
+#navbar .contato {
+    font-size: 22px;
+}
+
+#navbar .contato:hover {
+    border: none;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -131,8 +139,15 @@ nav li a:hover {
 }
 
 @keyframes float {
-    0%, 100% { transform: translatey(4px) }
-    50% { transform: translatey(-4px) }
+
+    0%,
+    100% {
+        transform: translatey(4px)
+    }
+
+    50% {
+        transform: translatey(-4px)
+    }
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -153,6 +168,7 @@ nav li a:hover {
     background-color: #1d1d1d;
     padding-top: 7em;
 }
+
 #fundo {
     background-color: whitesmoke;
 }
@@ -284,7 +300,7 @@ nav li a:hover {
     transition: 0.33s;
 }
 
-#projects .links a:hover{
+#projects .links a:hover {
     color: steelblue;
 }
 
@@ -305,7 +321,7 @@ nav li a:hover {
 /* -- Footer -- */
 
 #footer {
-    background-color: #151515;
+    background-color: #1d1d1d;
     color: #676767;
     font-size: 14px;
     text-align: center;
@@ -315,11 +331,11 @@ nav li a:hover {
 /*-----------------------------------------------------------------------------------*/
 /* -- Mobile -- */
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 957px) {
 
     /* -- Navbar -- */
     nav {
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 
     nav li a {
@@ -339,7 +355,7 @@ nav li a:hover {
     #display .esquerda h1 {
         font-size: 46px;
     }
-    
+
     #display .esquerda i {
         font-size: 2.2rem;
     }
@@ -347,7 +363,7 @@ nav li a:hover {
     #display .direita {
         display: none
     }
-    
+
     /* -- About -- */
 
     #about {
