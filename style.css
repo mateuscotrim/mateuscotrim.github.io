@@ -42,6 +42,7 @@ body {
     background-color: #1d1d1d;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     position: fixed;
     width: 100%;
     padding: 20px;
@@ -50,6 +51,7 @@ body {
 
 #navbar img {
     width: 40px;
+    display: flex;
 }
 
 #navbar span {
@@ -126,6 +128,7 @@ body {
 #display .esquerda i {
     color: white;
     font-size: 2.6rem;
+    transition: 0.4s;
 }
 
 #display .esquerda i:hover {
@@ -246,6 +249,11 @@ body {
     overflow: hidden;
     width: 340px;
     margin: 25px;
+    transition: 0.6s;
+}
+
+#projects .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
 
 #projects .inicio {
@@ -280,13 +288,13 @@ body {
     color: black;
     font-weight: bold;
     font-size: 17px;
-    transition: 0.6s;
+    transition: 0.4s;
 }
 
 #projects .fim i {
     color: black;
     font-size: 32px;
-    transition: 0.6s;
+    transition: 0.4s;
 }
 
 #projects .fim a:hover, #projects .fim i:hover {
