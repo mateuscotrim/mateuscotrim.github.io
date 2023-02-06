@@ -188,24 +188,51 @@ body {
     padding: 30px;
 }
 
-#about .esquerda {
+#about .esquerda .sobre {
     width: 480px;
 }
 
-#about .esquerda h1 {
+#about .esquerda .sobre h1 {
     color: white;
     font-size: 32px;
     text-align: center;
 }
 
-#about .esquerda p {
+#about .esquerda .sobre p {
     color: #676767;
     font-size: 18px;
     text-align: justify;
 }
 
-#about .esquerda u {
+#about .esquerda .sobre u {
     color: steelblue;
+}
+
+#about .esquerda .skills {
+   padding-top: 24px;
+}
+
+#about .esquerda .skills h1 {
+   color: white;
+   font-size: 22px;
+   text-align: center;
+   padding-bottom: 5px;
+}
+
+#about .esquerda .skills hr {
+    border: 2px solid steelblue;
+    width: 7em;
+    margin: auto;
+}
+
+#about .esquerda .skills span {
+    display: flex;
+    justify-content: center;
+}
+
+#about .esquerda .skills img {
+    width: 40px;
+    margin: 24px 24px 0px 0px;
 }
 
 #about .direita img {
@@ -354,7 +381,7 @@ body {
 
     /* -- About -- */
 
-    #about .esquerda h1 {
+    #about .esquerda .sobre h1 {
         font-size: 22px
     }
 
