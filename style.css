@@ -42,7 +42,7 @@ body {
     background-color: #1d1d1d;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    
     position: fixed;
     width: 100%;
     padding: 20px;
@@ -136,16 +136,9 @@ body {
 }
 
 #display .direita img {
-    max-width: 30em;
-    animation: float 2s ease-in-out infinite;
-    -webkit-filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 95%));
-    filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 95%));
+    width: 32em;
 }
 
-@keyframes float {
-    0%, 100% { transform: translatey(4px) }
-    50% { transform: translatey(-4px) }
-}
 
 /*-----------------------------------------------------------------------------------*/
 /* -- Setinha -- */
@@ -188,51 +181,55 @@ body {
     padding: 30px;
 }
 
-#about .esquerda .sobre {
+#about .esquerda {
     width: 480px;
 }
 
-#about .esquerda .sobre h1 {
+#about .esquerda h1 {
     color: white;
     font-size: 32px;
     text-align: center;
 }
 
-#about .esquerda .sobre p {
+#about .esquerda p {
     color: #676767;
     font-size: 18px;
     text-align: justify;
 }
 
-#about .esquerda .sobre u {
+#about .esquerda u {
     color: steelblue;
-}
-
-#about .esquerda .skills {
-   padding-top: 24px;
 }
 
 #about .esquerda .skills h1 {
    color: white;
-   font-size: 22px;
+   font-size: 20px;
    text-align: center;
-   padding-bottom: 5px;
+   padding-top: 24px;
+   padding-bottom: 4px;
 }
 
 #about .esquerda .skills hr {
-    border: 2px solid steelblue;
-    width: 7em;
+    border: 2px dashed steelblue;
+    width: 8em;
     margin: auto;
 }
 
 #about .esquerda .skills span {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #about .esquerda .skills img {
-    width: 40px;
-    margin: 24px 24px 0px 0px;
+    width: 36px;
+    margin: 16.6px;
+    transition: all 0.5s;
+}
+
+#about .esquerda .skills img:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 #about .direita img {
@@ -381,8 +378,8 @@ body {
 
     /* -- About -- */
 
-    #about .esquerda .sobre h1 {
-        font-size: 22px
+    #about .esquerda h1 {
+        font-size: 22px;
     }
 
     #about .direita {
