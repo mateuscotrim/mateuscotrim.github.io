@@ -189,7 +189,7 @@ body {
 }
 
 #about .esquerda p {
-    color: #676767;
+    color: #d1d1d1;
     font-size: 18px;
     text-align: justify;
 }
@@ -216,6 +216,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 12px;
 }
 
 #about .esquerda .skills img {
@@ -225,8 +226,8 @@ body {
 }
 
 #about .esquerda .skills img:hover {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
 }
 
 #about .direita img {
