@@ -12,7 +12,7 @@ html {
     vertical-align: baseline;
     line-height: 1;
     text-decoration: none;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 body {
@@ -23,7 +23,6 @@ body {
 ::-webkit-scrollbar {
     background-color: #1d1d1d;
     width: 0.8rem;
-
 }
 
 ::-webkit-scrollbar-thumb {
@@ -39,8 +38,7 @@ body {
 /* -- Navbar -- */
 
 #navbar {
-    background-color: #1d1d1d; 
-
+    background-color: #1d1d1d;
     display: flex;
     justify-content: space-around;
     position: fixed;
@@ -138,14 +136,14 @@ body {
 #display .direita img {
     width: 32em;
     animation: floating 3s ease-in-out infinite;
-    -webkit-filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 90%)); 
-        filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 90%));
+    -webkit-filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 90%));
+    filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 90%));
 }
 
 @keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 10px); }
-    100%   { transform: translate(0, -0px); }   
+    0% { transform: translate(0, 0px); }
+    50% { transform: translate(0, 12px); }
+    100% { transform: translate(0, -0px); }
 }
 
 
@@ -163,53 +161,54 @@ body {
 }
 
 /*-----------------------------------------------------------------------------------*/
+/* -- Sobre -- */
 
-#about {
+#sobre {
     background-color: #1d1d1d;
     padding-top: 8em;
 }
 
-#about .titulo h1 {
+#sobre .titulo h1 {
     color: white;
     font-size: 24px;
     text-align: center;
     padding-bottom: 4px;
 }
 
-#about .titulo hr {
+#sobre .titulo hr {
     border: 3px solid steelblue;
     width: 3.75em;
     margin: auto;
 }
 
-#about .conteudo {
+#sobre .conteudo {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 30px;
 }
 
-#about .esquerda {
+#sobre .esquerda {
     width: 480px;
 }
 
-#about .esquerda h1 {
+#sobre .esquerda h1 {
     color: white;
     font-size: 32px;
     text-align: center;
 }
 
-#about .esquerda p {
+#sobre .esquerda p {
     color: #d1d1d1;
     font-size: 18px;
     text-align: justify;
 }
 
-#about .esquerda u {
+#sobre .esquerda u {
     color: steelblue;
 }
 
-#about .esquerda .skills h1 {
+#sobre .esquerda .skills h1 {
     color: white;
     font-size: 20px;
     text-align: center;
@@ -217,31 +216,31 @@ body {
     padding-bottom: 4px;
 }
 
-#about .esquerda .skills hr {
+#sobre .esquerda .skills hr {
     border: 2px dashed steelblue;
     width: 8em;
     margin: auto;
 }
 
-#about .esquerda .skills span {
+#sobre .esquerda .skills span {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 12px;
 }
 
-#about .esquerda .skills img {
+#sobre .esquerda .skills img {
     width: 36px;
     margin: 16.6px;
     transition: all 0.5s;
 }
 
-#about .esquerda .skills img:hover {
+#sobre .esquerda .skills img:hover {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
 }
 
-#about .direita img {
+#sobre .direita img {
     width: 14em;
 }
 
@@ -253,26 +252,26 @@ body {
 }
 
 /*-----------------------------------------------------------------------------------*/
-/* -- Projects -- */
+/* -- Projetos -- */
 
-#projects {
+#projetos {
     padding-top: 8em;
 }
 
-#projects .titulo h1 {
+#projetos .titulo h1 {
     color: black;
     font-size: 24px;
     text-align: center;
     padding-bottom: 5px;
 }
 
-#projects .titulo hr {
+#projetos .titulo hr {
     border: 3px solid steelblue;
     width: 3em;
     margin: auto;
 }
 
-#projects .container {
+#projetos .container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -281,7 +280,7 @@ body {
     padding-bottom: 24px;
 }
 
-#projects .card {
+#projetos .card {
     background-color: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     width: 330px;
@@ -289,31 +288,51 @@ body {
     transition: all 0.6s;
 }
 
-#projects .card:hover {
+#projetos .card:hover {
     box-shadow: rgba(0, 0, 0, 0.2) 3px 30px 60px;
 }
 
-#projects img {
-    width: 100%;
-    height: 100%;
+#projetos .inicio {
+    height: 189px;
+    overflow: hidden;
+    overflow-y: auto;
 }
 
-#projects .meio {
+#projetos .inicio::-webkit-scrollbar {
+    background-color: transparent;
+    width: 0.4rem;
+}
+
+#projetos .inicio::-webkit-scrollbar-thumb {
+    background-color: #676767;
+    border-radius: 0;
+}
+
+#projetos .inicio::-webkit-scrollbar-thumb:hover {
+    background-color: steelblue;
+}
+
+#projetos .inicio img {
+    width: 100%;
+    height: auto;
+}
+
+#projetos .meio {
     padding: 15px 25px 15px 25px;
 }
 
-#projects .meio p {
+#projetos .meio p {
     color: #777;
     margin: 10px 0 10px 0;
 }
 
-#projects .fim {
+#projetos .fim {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#projects .fim a {
+#projetos .fim a {
     display: flex;
     color: black;
     font-weight: bold;
@@ -321,21 +340,21 @@ body {
     transition: 0.6s;
 }
 
-#projects .fim i {
+#projetos .fim i {
     color: black;
     font-size: 32px;
     transition: 0.6s;
 }
 
-#projects .fim a:hover, #projects .fim i:hover {
+#projetos .fim a:hover, #projetos .fim i:hover {
     color: steelblue;
 }
 
-#projects .fim span{
+#projetos .fim span {
     display: flex;
 }
 
-#projects .fim img {
+#projetos .fim img {
     width: 24px;
 }
 
@@ -344,7 +363,7 @@ body {
 
 #footer {
     background-color: #1D1D1D;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23282828' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23292929'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23282828' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23292929'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
     color: whitesmoke;
     font-size: 16px;
     text-align: center;
@@ -366,7 +385,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
         display: none;
     }
 
-    #navbar .mobile, #navbar ul {
+    #navbar .mobile,
+    #navbar ul {
         display: block;
         background-color: transparent;
     }
@@ -375,10 +395,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
         color: white;
         font-size: 34px;
         transition: all 0.4s;
-    }
-
-    #navbar button i:hover {
-        color: steelblue;
     }
 
     #navbar .dropdown {
@@ -415,11 +431,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
     /* -- About -- */
 
-    #about .esquerda h1 {
+    #sobre .esquerda h1 {
         font-size: 22px;
     }
 
-    #about .direita {
+    #sobre .direita {
         display: none
     }
 
