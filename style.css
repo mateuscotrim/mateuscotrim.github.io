@@ -44,6 +44,7 @@ body {
     justify-content: space-around;
     position: fixed;
     width: 100%;
+    z-index: 999;
     padding: 20px;
     border-bottom: 1px solid #1a1a1a;
 }
@@ -135,6 +136,15 @@ body {
 
 #display .direita img {
     width: 32em;
+    animation: floating 3s ease-in-out infinite;
+    -webkit-filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 90%)); 
+        filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 90%));
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, -0px); }   
 }
 
 
