@@ -35,13 +35,12 @@ body {
 /* -- Navbar -- */
 
 #navbar {
-    background-color: #1d1d1d;
     display: flex;
     justify-content: space-around;
     position: fixed;
     width: 100%;
-    z-index: 999;
     padding: 20px;
+    z-index: 999;
 }
 
 #navbar .mobile {
