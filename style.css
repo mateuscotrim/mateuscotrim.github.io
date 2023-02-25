@@ -433,6 +433,10 @@ body {
 
     /* -- Display -- */
 
+    #display .container {
+        height: 100vh;
+    }
+
     #display .esquerda h2 {
         font-size: 28px;
     }
@@ -449,7 +453,15 @@ body {
         display: none
     }
 
+    #display .setinha {
+        display: none;
+    }
+
     /* -- About -- */
+
+    #sobre {
+        padding-top: 2em;
+    }
 
     #sobre .esquerda h1 {
         font-size: 22px;
