@@ -53,11 +53,11 @@
             </div>
         </section>
 
-        <section id="sobre">
-            <div class="titulo">
+        <section id="sobre" >
+            <div class="titulo" anime="left">
                 <h1>Sobre mim</h1><hr>
             </div>
-            <div class="container">
+            <div class="container" anime="left">
                 <div class="esquerda">
                     <h1>Estudante na área de TI.</h1><br>
                     <p>Iniciei minha jornada profissional cursando um curso <u>Técnico em Informática</u>. Recentemente
@@ -83,13 +83,13 @@
         <img id="wave" src="arquivos/waves.svg">
 
         <section id="projetos">
-            <div class="titulo">
+            <div class="titulo" anime="left">
                 <h1>Projetos</h1><hr>
             </div>
-            <div class="container">
+            <div class="container" anime="left">
 
                 <!-- INICIO -->
-                <div class="card">
+                <div class="card" >
                     <div class="inicio">
                         <img src="https://media.discordapp.net/attachments/1063891503107285102/1074821303158194206/portfolio.png">
                     </div>
@@ -99,8 +99,9 @@
                         <div class="fim">
                             <a></a>
                             <span>
-                                <img title="HTML5" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-                                <img title="CSS3" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                                <img title="HTML" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+                                <img title="CSS" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"> 
+                                <img title="JavaScript" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
                             </span>
                         </div>
                     </div>
@@ -119,8 +120,8 @@
                             <a class="hover-link" href="https://ultiiy.github.io/projetos/">Visitar site</a>
                             <a title="Repositório" href="https://github.com/ultiiy/projetos" target="_blank" rel="noopener noreferrer"><i class="ri-github-fill"></i></i></a>
                             <span>
-                                <img title="HTML5" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-                                <img title="CSS3" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                                <img title="HTML" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+                                <img title="CSS" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
                             </span>
                         </div>
                     </div>
@@ -133,30 +134,9 @@
 
     <footer id="footer">
         <p>&copy; 2023 Mateus Cotrim - Alguns direitos reservados.</p>
+        <p class="love">Made with <i class="ri-hearts-fill"></i> by Mateus Cotrim</p>
     </footer>
-
-    <script>
-        function menuMobile() {
-            document.getElementsByClassName('dropdown')[0].classList.toggle('down');
-            if (document.getElementsByClassName('dropdown')[0].classList.contains('down')) {
-                setTimeout(function () {
-                    document.getElementsByClassName('dropdown')[0].style.overflow = 'visible'
-                }, 500)
-            } else {
-                document.getElementsByClassName('dropdown')[0].style.overflow = 'hidden'
-            }
-        }
-
-        var nav = document.getElementById('navbar');
-        window.addEventListener("scroll", function (event) {
-            if (window.pageYOffset > 100) {
-                nav.style.background = "#1d1d1d";
-            } else {
-                nav.style.background = "transparent";
-            }
-        });
-    </script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
