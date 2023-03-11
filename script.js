@@ -3,7 +3,7 @@ function menuMobile() {
     if (document.getElementsByClassName('dropdown')[0].classList.contains('down')) {
         setTimeout(function () {
             document.getElementsByClassName('dropdown')[0].style.overflow = 'visible'
-        }, 500)
+        }, 250)
     } else {
         document.getElementsByClassName('dropdown')[0].style.overflow = 'hidden'
     }
@@ -12,7 +12,7 @@ function menuMobile() {
 var nav = document.getElementById('navbar');
 window.addEventListener("scroll", function (event) {
     if (window.pageYOffset > 100) {
-        nav.style.background = "#1d1d1d";
+        nav.style.background = "#1b1b1b";
     } else {
         nav.style.background = "transparent";
     }
