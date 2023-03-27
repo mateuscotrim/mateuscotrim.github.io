@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="shortcut icon" href="assets/files/white-logo.png" type="image/png">
+    <title>Portfólio | Mateus Cotrim</title>
+</head>
+
+<body>
+    <main>
+        <section id="navbar">
+            <a href="#"><img src="assets/files/white-logo.png"></a>
+            <ul class="web">
+                <li><a href="#" class="a">Home</a></li>
+                <li><a href="#sobre" class="a">Sobre mim</a></li>
+                <li><a href="#projetos" class="a">Projetos</a></li>
+                <li><a href="mailto:mateus.cotrim@outlook.com" title="mateus.cotrim@outlook.com"><i class="ri-mail-send-line"></i></a></li>
+            </ul>
+            <button class="mobile" onclick="menuMobile()">
+                <i class="ri-menu-line"></i>
+                <ul class="dropdown">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="mailto:mateus.cotrim@outlook.com">E-mail</a></li>
+                </ul>
+            </button>
+        </section>
+
+        <section id="display">
+            <div class="container">
+                <div class="esquerda">
+                    <h2>Olá, me chamo</h2><h1>Mateus Cotrim</h1><hr>
+                    <div class="info">
+                        <p>Estudante de TI</p>
+                        <span>
+                            <a title="Linkedin" href="https://www.linkedin.com/in/mateus-cotrim/" target="_blank" rel="noopener noreferrer"><i class="ri-linkedin-box-fill"></i></a>
+                            <a title="Github" href="https://github.com/Ultiiy" target="_blank" rel="noopener noreferrer"><i class="ri-github-fill"></i></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="direita">
+                    <img src="assets/files/Development-cuate.png">
+                </div>
+            </div>
+            <div class="setinha">
+                <a href="#sobre"><img src="https://static.wixstatic.com/media/3a5df9_81b94f0536ef4a379857d7195426117c~mv2.gif"></a>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <div class="titulo" anime="left">
+                <h1>Sobre mim</h1><hr>
+            </div>
+            <div class="container">
+                <div class="esquerda" anime="left">
+                    <h1>Estudante na área de TI.</h1><br>
+                    <p>Iniciei minha jornada profissional cursando um curso <u>Técnico em Informática</u>. Recentemente
+                        trabalhei como suporte técnico em uma escola como estagiário. Hoje estou
+                        cursando <u>Análise e Desenvolvimento de Sistemas</u>, onde estou no 2º Semestre. Sou apaixonado
+                        por tecnologia, games e inovação. Me considero uma pessoa proativa e com muita vontade de
+                        aprender e fazer acontecer.</p>
+                    <div class="skills">
+                        <h1>Alguns conhecimentos</h1><hr>
+                        <span>
+                            <img title="HTML" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+                            <img title="CSS" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                            <img title="JavaScript" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+                            <img title="PHP" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-plain.svg">
+                            <img title="MySQL" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg">
+                        </span>
+                    </div>
+                </div>
+                <div class="direita" anime="left">
+                    <img src="assets/files/Cool robot-cuate.svg">
+                </div>
+            </div>
+        </section>
+        <img id="wave" src="assets/files/waves.svg">
+
+        <section id="projetos">
+            <div class="titulo" anime="left">
+                <h1>Projetos</h1><hr>
+            </div>
+            <div class="container" anime="left">
+
+                <!-- INICIO -->
+                <div class="card">
+                    <div class="inicio big-image">
+                        <img src="https://media.discordapp.net/attachments/1063891503107285102/1078886586248335400/portfolio.png?width=517&height=609">
+                    </div>
+                    <div class="meio">
+                        <h3>| Portfólio</h3>
+                        <p>Primeiro projeto, utilizando HTML e CSS, com o objetivo de ser meu portfólio profissional.</p>
+                        <div class="fim">
+                            <a></a>
+                            <span>
+                                <img title="HTML" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+                                <img title="CSS" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                                <img title="JavaScript" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM -->
+
+                <!-- INICIO -->
+                <div class="card">
+                    <div class="inicio">
+                        <a href="https://ultiiy.github.io/projetos/"><img src="https://media.discordapp.net/attachments/1063891503107285102/1087507551773544558/projetos.png?width=1171&height=609"></a>
+                    </div>
+                    <div class="meio">
+                        <h3>| Projetinhos WEB</h3>
+                        <p>Um simples Website com um único proposito de exibir alguns projetos WEB, feito por mim. </p>
+                        <div class="fim">
+                            <a class="hover-link" href="https://ultiiy.github.io/projetos/">Visitar site</a>
+                            <a title="Repositório" href="https://github.com/ultiiy/projetos" target="_blank" rel="noopener noreferrer"><i class="ri-github-fill"></i></i></a>
+                            <span>
+                                <img title="HTML" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+                                <img title="CSS" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM -->
+
+                <!-- INICIO -->
+                <div class="card">
+                    <div class="inicio">
+                        <a href="https://ultiiy.github.io/villager/"><img src="https://media.discordapp.net/attachments/1063891503107285102/1089644523581345862/image.png?width=1171&height=609"></a>
+                    </div>
+                    <div class="meio">
+                        <h3>| Villager Life</h3>
+                        <p>Um simples jogo com o intuito de cuidar de um Villager, onde você pode comprar alimento e o alimentar.</p>
+                        <div class="fim">
+                            <a class="hover-link" href="https://ultiiy.github.io/villager/" target="_blank" rel="noopener noreferrer">Visitar jogo</a>
+                            <a title="Repositório" href="https://github.com/ultiiy/villager" target="_blank" rel="noopener noreferrer"><i class="ri-github-fill"></i></i></a>
+                            <span>
+                                <img title="HTML" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+                                <img title="CSS" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                                <img title="JavaScript" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM -->
+
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>&copy; 2023 Mateus Cotrim - Alguns direitos reservados.</p>
+        <p class="love">Made with <i class="ri-hearts-fill"></i> by Mateus Cotrim</p>
+    </footer>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
