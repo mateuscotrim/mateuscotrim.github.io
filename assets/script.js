@@ -1,14 +1,3 @@
-function menuMobile() {
-    document.getElementsByClassName('dropdown')[0].classList.toggle('down');
-    if (document.getElementsByClassName('dropdown')[0].classList.contains('down')) {
-        setTimeout(function () {
-            document.getElementsByClassName('dropdown')[0].style.overflow = 'visible'
-        }, 250)
-    } else {
-        document.getElementsByClassName('dropdown')[0].style.overflow = 'hidden'
-    }
-}
-
 var nav = document.getElementById('navbar');
 window.addEventListener("scroll", function (event) {
     if (window.pageYOffset > 100) {
