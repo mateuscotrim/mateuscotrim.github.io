@@ -1,6 +1,6 @@
 var nav = document.getElementById('navbar');
 window.addEventListener("scroll", function (event) {
-    if (window.pageYOffset > 100) {
+    if (window.pageYOffset > 80) {
         nav.style.background = "#1b1b1b";
     } else {
         nav.style.background = "transparent";
